@@ -7,7 +7,7 @@ include 'wechatAppPay.class.php';
 //1.统一下单方法
 $wechatAppPay = new wechatAppPay($appid, $mch_id, $notify_url, $key);
 $params['body'] = '商品描述'; //商品描述
-$params['out_trade_no'] = 'O20160617021323-001'; //自定义的订单号
+$params['out_trade_no'] = '*************'; //自定义的订单号
 $params['total_fee'] = '100'; //订单金额 只能为整数 单位为分
 $params['trade_type'] = 'APP'; //交易类型 JSAPI | NATIVE | APP | WAP 
 $result = $wechatAppPay->unifiedOrder( $params );
